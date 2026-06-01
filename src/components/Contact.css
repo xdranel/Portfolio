@@ -1,0 +1,36 @@
+.contact-inner {
+  max-width: 540px;
+}
+
+.contact-sub {
+  color: var(--gray-300);
+  line-height: 1.8;
+  margin-bottom: 36px;
+}
+
+.contact-btn {
+  display: inline-block;
+  margin-bottom: 32px;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.social-links a {
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gray-300);
+  transition: color 0.2s;
+}
+
+.social-links a:hover {
+  color: var(--white);
+}
+
+.divider {
+  color: var(--gray-500);
+}

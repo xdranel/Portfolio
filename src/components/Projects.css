@@ -1,0 +1,79 @@
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1px;
+  border: 1px solid var(--border);
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px;
+  border: 1px solid var(--border);
+  margin: -1px;
+  transition: background 0.2s;
+}
+
+.project-card:hover {
+  background: var(--gray-700);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-number {
+  font-size: 11px;
+  color: var(--gray-500);
+  font-family: 'Courier New', monospace;
+  letter-spacing: 0.08em;
+}
+
+.project-links {
+  display: flex;
+  gap: 14px;
+}
+
+.project-links a {
+  color: var(--gray-500);
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.project-links a:hover {
+  color: var(--white);
+}
+
+.project-title {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--white);
+  letter-spacing: -0.01em;
+}
+
+.project-desc {
+  font-size: 14px;
+  color: var(--gray-300);
+  line-height: 1.75;
+  flex: 1;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+}
+
+.project-tech li {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gray-500);
+  padding: 3px 8px;
+  border: 1px solid var(--border);
+}
